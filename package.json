@@ -1,5 +1,5 @@
 {
-  "name": "koa-ping",
+  "name": "koa-ping-healthcheck",
   "version": "1.0.0",
   "description": "Make koa apps check internal status and health. Inspired by express-ping",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rictorres/koa-ping.git"
+    "url": "https://github.com/rictorres/koa-ping-healthcheck.git"
   },
   "keywords": [
     "koa",
@@ -20,12 +20,12 @@
   "engines": {
     "node": ">=8.x.x"
   },
-  "author": "Alexey Khristov <sword.and.digit@gmail.com>",
+  "author": "Ricardo Torres",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rictorres/koa-ping/issues"
+    "url": "https://github.com/rictorres/koa-ping-healthcheck/issues"
   },
-  "homepage": "https://github.com/rictorres/koa-ping",
+  "homepage": "https://github.com/rictorres/koa-ping-healthcheck",
   "dependencies": {
     "node-df": "^0.1.4",
     "app-root-path": "^2.1.0"

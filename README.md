@@ -1,14 +1,14 @@
-# koa-ping
+# koa-ping-healthcheck
 
 Make koa apps check internal status and health. This project is inspired by **[express-ping](https://github.com/palmerabollo/express-ping)**
 
 ## Usage
 
-- Save "koa-ping" to your package.json dependencies `npm install koa-ping --save`
+- Save "koa-ping-healthcheck" to your package.json dependencies `npm install koa-ping-healthcheck --save`
 - Include the middleware in your koa application:
 
 ```javascript
-const health = require("koa-ping");
+const health = require("koa-ping-healthcheck");
 const Koa = require("koa");
 
 const app = new Koa();
@@ -26,11 +26,11 @@ Once you launch your koa application, it will add a new **/ping** endpoint to ch
   "timestamp": 1416079378823,
   "uptime": 550.219,
   "application": {
-    "name": "koa-ping",
+    "name": "koa-ping-healthcheck",
     "version": "1.0.0",
     "pid": 21149,
     "title": "node",
-    "argv": ["node", "/projects/koa-ping/index.js"],
+    "argv": ["node", "/koa-ping-healthcheck/index.js"],
     "versions": {
       "http_parser": "2.3",
       "node": "0.11.14",
