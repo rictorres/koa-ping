@@ -8,24 +8,26 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/AlexeyKhristov/koa-ping.git"
+    "url": "https://github.com/rictorres/koa-ping.git"
   },
   "keywords": [
     "koa",
-    "generators",
     "middleware",
     "health",
     "ping",
     "api"
   ],
+  "engines": {
+    "node": ">=8.x.x"
+  },
   "author": "Alexey Khristov <sword.and.digit@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AlexeyKhristov/koa-ping/issues"
+    "url": "https://github.com/rictorres/koa-ping/issues"
   },
-  "homepage": "https://github.com/AlexeyKhristov/koa-ping",
+  "homepage": "https://github.com/rictorres/koa-ping",
   "dependencies": {
-    "node-df": "^0.1.1",
-    "app-root-path": "^1.0.0"
+    "node-df": "^0.1.4",
+    "app-root-path": "^2.1.0"
   }
 }

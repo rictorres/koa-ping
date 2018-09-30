@@ -1,19 +1,18 @@
-'use strict';
+'use strict'
 
-var koa = require("koa");
-var health = require("../index");
+const Koa = require('koa')
+const health = require('../index')
 
-var app = koa();
+const app = new Koa()
 
 // using the default (/ping)
-// app.use(health());
+// app.use(health())
 
 // OR using custom URL
-var customUrl = ''
-customUrl = '/nonpublic/ping';
-app.use(health(customUrl));
+const customUrl = '/nonpublic/ping'
+app.use(health({ path: customUrl }))
 
-app.listen(3000);
+app.listen(3000)
 
-var message = customUrl.length > 0 ? customUrl : '/ping';
-console.log('Ready. http://localhost:3000' + message + ' to check health');
+const message = customUrl.length > 0 ? customUrl : '/ping'
+console.log(`Ready. http://localhost:3000${message} to check health`)
