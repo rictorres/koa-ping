@@ -51,7 +51,7 @@ const healthCheck = (options = {}) => {
       }
       const custom = options.customCheck ? await options.customCheck(ctx) : {}
 
-      ctx.response.body = {
+      ctx.response.body = options.customCheckOnly ? custom : {
         custom,
         ...health,
       }
