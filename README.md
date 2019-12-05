@@ -204,11 +204,12 @@ You don't need to configure anything. By default, a `/ping` endpoint will be add
 app.use(health.ping({ path: "/custompath" }));
 ```
 
-You can also pass a custom checker:
+You can also pass a custom checker, use `customCheckOnly` option if you want to display only the custom checker's output:
 
 ```javascript
 app.use(
   healthCheck({
+    customCheckOnly: false, //set to true to display only the output from custom checker
     customCheck: async function customHealthCheck(ctx) {
       const start = Date.now();
 
@@ -222,6 +223,7 @@ app.use(
   })
 );
 ```
+
 
 Which will output:
 
