@@ -209,7 +209,7 @@ You can also pass a custom checker, use `customCheckOnly` option if you want to 
 ```javascript
 app.use(
   healthCheck({
-    customCheckOnly: true, //display only the output from custom checker
+    customCheckOnly: false, //set to true to display only the output from custom checker
     customCheck: async function customHealthCheck(ctx) {
       const start = Date.now();
 
